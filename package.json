@@ -1,0 +1,17 @@
+{
+  "name": "lilagents-trace-tool",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.1.3",
+  "description": "Trace where a link actually goes: follow every redirect hop and see the final destination, status codes, and timing. Free tool by lilAgents.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^6.4.4"
+  }
+}

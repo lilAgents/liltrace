@@ -49,7 +49,7 @@ function hopRow(h, i, total) {
   const isLast = i === total - 1;
   const settled = isLast && !h.location;
   const to = h.location
-    ? `<div class="hop-to"><span class="hop-arrow" aria-hidden="true">&#8595;</span> <a href="${escAttr(h.location)}" target="_blank" rel="noopener">${escHtml(h.location)}</a></div>`
+    ? `<div class="hop-to"><span class="hop-arrow" aria-hidden="true">&#8595;</span> <a href="${escAttr(h.location)}" target="_blank">${escHtml(h.location)}</a></div>`
     : '';
   const finalTag = settled
     ? `<div class="hop-final">Final destination${h.contentType ? ' &middot; ' + escHtml(h.contentType) : ''}</div>`
@@ -59,7 +59,7 @@ function hopRow(h, i, total) {
     <div class="hop-body">
       <div class="hop-line">
         <span class="badge badge--${cls}">${h.status || '?'}</span>
-        <a class="hop-url" href="${escAttr(h.url)}" target="_blank" rel="noopener">${escHtml(h.url)}</a>
+        <a class="hop-url" href="${escAttr(h.url)}" target="_blank">${escHtml(h.url)}</a>
       </div>
       ${to}
       ${finalTag}
